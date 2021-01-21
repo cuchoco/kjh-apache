@@ -3,7 +3,7 @@ MAINTAINER "jihwan-kim"
 LABEL "purpose"="webserver practice"
 RUN apt-get update
 RUN apt-get install apache2 -y
-ADD test.html /var/www/html
+ADD text.html /var/www/html
 WORKDIR /var/www/html
 RUN ["/bin/bash", "-c", "echo hello >> test.html"]
 EXPOSE 80
